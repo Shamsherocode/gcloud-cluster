@@ -24,7 +24,7 @@ spec:
   capacity:
     storage: 5Gi
   hostPath:
-    path: /home/docker/jobsearch
+    path: /home/docker/myFirstProject
     type: ""
   persistentVolumeReclaimPolicy: Recycle
   claimRef:
@@ -74,7 +74,7 @@ spec:
           name: django
         volumeMounts:
         - name: django-persistent-storage
-          mountPath: /jobsearch
+          mountPath: /myFirstProject
       volumes:
       - name: django-persistent-storage
         persistentVolumeClaim:

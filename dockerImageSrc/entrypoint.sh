@@ -6,13 +6,13 @@
 
 # Apply database migrations
 echo "Apply database migrations"
-python ./jobsearch/manage.py migrate
+python ./myFirstProject/manage.py migrate
 
 echo "Create superuser"
-python ./jobsearch/manage.py createadminuser
+python ./myFirstProject/manage.py createadminuser
 
 # Start server
 echo "Starting server"
-python ./jobsearch/manage.py runserver 0.0.0.0:8000
+python ./myFirstProject/manage.py runserver 0.0.0.0:8000
 #gunicorn --reload config.wsgi -c gunicorn.py -b 0.0.0.0:8888
 
